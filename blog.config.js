@@ -24,11 +24,11 @@ const BLOG = {
 
  // The website uses PingFangSC and NotoSansSC by default,
    // If you need to customize the font, please change CUSTOM_FONT to true, and change CUSTOM_FONT_URL to your font CSS address, and specify your font-family in CUSTOM_FONT_SANS and CUSTOM_FONT_SERIF
-  CUSTOM_FONT: process.env.NEXT_PUBLIC_CUSTOM_FONT || false, // Whether to use a custom font
+  CUSTOM_FONT: process.env.NEXT_PUBLIC_CUSTOM_FONT || true, // Whether to use a custom font
    // Custom font example: Please change CUSTOM_FONT to true first, and change CUSTOM_FONT_URL to your font CSS address, and specify your fontfamily in CUSTOM_FONT_SANS and CUSTOM_FONT_SERIF
-  CUSTOM_FONT_URL: ['https://npm.elemecdn.com/lxgw-wenkai-webfont@1.6.0/style.css'], // 自定义字体的CSS
-  CUSTOM_FONT_SANS: ['LXGW WenKai'], // custom sans serif font
-  CUSTOM_FONT_SERIF: ['LXGW WenKai'], // custom serif font
+  CUSTOM_FONT_URL: ['https://github.com/JulietaUla/Montserrat/blob/master/fonts/webfonts/Montserrat.css'], // CSS for custom fonts
+  CUSTOM_FONT_SANS: ['Montserrat Regular'], // custom sans serif font
+  CUSTOM_FONT_SERIF: ['Montserrat Light'], // custom serif font
 
  // Whether the sidebar layout is reversed (left to right, right to left) Supported theme: hexo next medium fukasawa example
   LAYOUT_SIDEBAR_REVERSE: false,
