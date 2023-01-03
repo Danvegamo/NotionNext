@@ -12,7 +12,7 @@ const BLOG = {
 
   AUTHOR: 'Danvegamo', // Author
   BIO: 'Lead & Product designer', // About of the author
-  LINK: 'https://tangly1024.com', // website address
+  LINK: 'https://lmny.art', // website address
   KEYWORDS: 'Notion, Blog', // website keywords separated by commas
    // Social link, do not need to leave blank, for example CONTACT_WEIBO:''
   CONTACT_EMAIL: 'd_vega@lmny.art', // Email
