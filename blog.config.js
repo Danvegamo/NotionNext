@@ -1,36 +1,36 @@
-// 注: process.env.XX是Vercel的环境变量，配置方式见：https://docs.tangly1024.com/zh/features/personality
+// Note: process.env.XX is the environment variable of Vercel, see the configuration method: https://docs.tangly1024.com/zh/features/personality
 const BLOG = {
   // Important page_id！！！Duplicate Template from  https://www.notion.so/tanghh/02ab3b8678004aa69e9e415905ef32a5
-  NOTION_PAGE_ID: process.env.NOTION_PAGE_ID || '02ab3b8678004aa69e9e415905ef32a5',
-  PSEUDO_STATIC: false, // 伪静态路径，开启后所有文章URL都以 .html 结尾。
-  NEXT_REVALIDATE_SECOND: 5, // 更新内容缓存间隔 单位(秒)；即每个页面有5秒的纯静态期、此期间无论多少次访问都不会抓取notion数据；调大该值有助于节省Vercel资源、同时提升访问速率，但也会使文章更新有延迟。
-  THEME: process.env.NEXT_PUBLIC_THEME || 'hexo', // 主题， 支持 ['next','hexo',"fukasawa','medium','example'] @see https://preview.tangly1024.com
-  THEME_SWITCH: process.env.NEXT_PUBLIC_THEME_SWITCH || false, // 是否显示切换主题按钮
+  NOTION_PAGE_ID: process.env.NOTION_PAGE_ID || '3dc5c6078733447f9aec582c9975a33c',
+  PSEUDO_STATIC: false, // Pseudo-static path, when enabled, all article URLs end with .html.
+  NEXT_REVALIDATE_SECOND: 5, // Update content cache interval unit (seconds); that is, each page has a purely static period of 5 seconds, during which no notion data will be fetched no matter how many visits are made; increasing this value will help save Vercel Resources, while increasing the access rate, but it will also delay the update of articles.
+  THEME: process.env.NEXT_PUBLIC_THEME || 'hexo', // Theme, support ['next','hexo',"fukasawa','medium','example'] @see https://preview.tangly1024.com
+  THEME_SWITCH: process.env.NEXT_PUBLIC_THEME_SWITCH || false, // whether to display switch theme button
   LANG: 'zh-CN', // e.g 'zh-CN','en-US'  see /lib/lang.js for more.
   SINCE: 2021, // e.g if leave this empty, current year will be used.
-  APPEARANCE: 'light', // ['light', 'dark', 'auto'], // light 日间模式 ， dark夜间模式， auto根据时间和主题自动夜间模式
+  APPEARANCE: 'light', // ['light', 'dark', 'auto'], // light day mode, dark night mode, auto automatic night mode according to time and theme
 
-  AUTHOR: 'tangly1024', // 作者
-  BIO: '一个普通的干饭人🍚', // 作者简介
-  LINK: 'https://tangly1024.com', // 网站地址
-  KEYWORDS: 'Notion, 博客', // 网站关键词 英文逗号隔开
-  // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
-  CONTACT_EMAIL: 'mail@tangly1024.com', // 邮箱
-  CONTACT_WEIBO: '', // 你的微博个人主页
-  CONTACT_TWITTER: '', // 你的twitter个人主页
-  CONTACT_GITHUB: 'https://github.com/tangly1024', // 你的github个人主页
-  CONTACT_TELEGRAM: 'https://t.me/tangly_1024', // 你的telegram 地址 例如 https://t.me/tangly_1024
-  CONTACT_LINKEDIN: '', // 你的linkedIn 首页
+  AUTHOR: 'Danvegamo', // Author
+  BIO: 'Lead & Product designer', // About of the author
+  LINK: 'https://tangly1024.com', // website address
+  KEYWORDS: 'Notion, Blog', // website keywords separated by commas
+   // Social link, do not need to leave blank, for example CONTACT_WEIBO:''
+  CONTACT_EMAIL: 'd_vega@lmny.art', // Email
+  CONTACT_WEIBO: '', // personal website in Weibo
+  CONTACT_TWITTER: '', // Your Twitter profile
+  CONTACT_GITHUB: 'https://github.com/Danvegamo', // Your Github profile
+  CONTACT_TELEGRAM: '', // Your telegram profile https://t.me/tangly_1024
+  CONTACT_LINKEDIN: 'https://www.linkedin.com/in/danvegamo/', // Your linkedIn profile
 
-  // 网站默认使用PingFangSC及NotoSansSC，
-  // 如需自定义字体，请将CUSTOM_FONT改为 true，并将CUSTOM_FONT_URL改为你的字体CSS地址，同时在CUSTOM_FONT_SANS与CUSTOM_FONT_SERIF中指定你的font-family
-  CUSTOM_FONT: process.env.NEXT_PUBLIC_CUSTOM_FONT || false, // 是否使用自定义字体
-  // 自定义字体示例： 请先将 CUSTOM_FONT 改为 true， 并将 CUSTOM_FONT_URL 改为你的字体CSS地址，同时在 CUSTOM_FONT_SANS 与 CUSTOM_FONT_SERIF 中指定你的 fontfamily
+ // The website uses PingFangSC and NotoSansSC by default,
+   // If you need to customize the font, please change CUSTOM_FONT to true, and change CUSTOM_FONT_URL to your font CSS address, and specify your font-family in CUSTOM_FONT_SANS and CUSTOM_FONT_SERIF
+  CUSTOM_FONT: process.env.NEXT_PUBLIC_CUSTOM_FONT || false, // Whether to use a custom font
+   // Custom font example: Please change CUSTOM_FONT to true first, and change CUSTOM_FONT_URL to your font CSS address, and specify your fontfamily in CUSTOM_FONT_SANS and CUSTOM_FONT_SERIF
   CUSTOM_FONT_URL: ['https://npm.elemecdn.com/lxgw-wenkai-webfont@1.6.0/style.css'], // 自定义字体的CSS
-  CUSTOM_FONT_SANS: ['LXGW WenKai'], // 自定义无衬线字体
-  CUSTOM_FONT_SERIF: ['LXGW WenKai'], // 自定义衬线字体
+  CUSTOM_FONT_SANS: ['LXGW WenKai'], // custom sans serif font
+  CUSTOM_FONT_SERIF: ['LXGW WenKai'], // custom serif font
 
-  // 侧栏布局 是否反转(左变右,右变左) 已支持主题: hexo next medium fukasawa example
+ // Whether the sidebar layout is reversed (left to right, right to left) Supported theme: hexo next medium fukasawa example
   LAYOUT_SIDEBAR_REVERSE: false,
 
   // 一个小插件展示你的facebook fan page~ @see https://tw.andys.pro/article/add-facebook-fanpage-notionnext
