@@ -67,9 +67,9 @@ const BLOG = {
   FIREWORKS_COLOR: ['255, 20, 97', '24, 255, 146', '90, 135, 255', '251, 243, 140'],
 
   // suspended widget
-  WIDGET_PET: process.env.NEXT_PUBLIC_WIDGET_PET || true, // wheter to display the pet widget
+  WIDGET_PET: process.env.NEXT_PUBLIC_WIDGET_PET || false, // wheter to display the pet widget
   WIDGET_PET_LINK: 'https://cdn.jsdelivr.net/npm/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json', // Widget model address@see https://github.com /xiazeyu/live2d-widget-models
-  WIDGET_PET_SWITCH_THEME: true, // Click on the pet widget to switch blog theme
+  WIDGET_PET_SWITCH_THEME: false, // Click on the pet widget to switch blog theme
 
   // Music player plugin
   MUSIC_PLAYER: process.env.NEXT_PUBLIC_MUSIC_PLAYER || false, // Whether to use the music player plugin
