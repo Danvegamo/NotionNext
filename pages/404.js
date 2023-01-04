@@ -10,7 +10,7 @@ import { useGlobal } from '@/lib/global'
 const NoFound = props => {
   const { theme, siteInfo } = useGlobal()
   const ThemeComponents = ThemeMap[theme]
-  const meta = { title: `${props?.siteInfo?.title} | 页面找不到啦`, image: siteInfo?.pageCover }
+  const meta = { title: `${props?.siteInfo?.title} | Page not found`, image: siteInfo?.pageCover }
   return <ThemeComponents.Layout404 {...props} meta={meta}/>
 }
 
