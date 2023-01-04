@@ -3,7 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 
 /**
- * 首页导航大按钮组件
+ * Home navigation large button component
  * @param {*} props
  * @returns
  */

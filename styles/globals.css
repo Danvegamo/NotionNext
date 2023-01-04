@@ -4,7 +4,7 @@
 
 html {
   --scrollbarBG: #ffffff00;
-  --thumbBG: #b8b8b8;
+  --thumbBG: #b7b7b7;
 }
 body::-webkit-scrollbar {
   width: 5px;
@@ -111,7 +111,7 @@ nav {
   @apply right-auto left-0 hidden lg:block z-10 !important;
 }
 
-/* 隐藏滚动条 */
+/* Hide scrollbar */
 .scroll-hidden {
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
@@ -175,7 +175,7 @@ nav {
 }
 
 
-/* waline评论插件夜间适配 */
+/* waline comment plugin nightly adaptation */
 .wl-panel{
   @apply dark:bg-black dark:border-gray-800
 }
@@ -188,7 +188,7 @@ nav {
   @apply dark:bg-gray-800 !important
 }
 
-/* 固定两行 */
+/* Fixed two rows */
 .text-line-2 {
     overflow : hidden;
 	text-overflow: ellipsis;
