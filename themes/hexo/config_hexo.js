@@ -1,28 +1,29 @@
 const CONFIG_HEXO = {
   HOME_BANNER_ENABLE: true,
-  HOME_BANNER_GREETINGS: ['Hi，I am product designer', 'Hi，I am XR creator', 'Hi，I am artist', 'Welcome to mi blog🎉'], // Banner habilities
+  HOME_BANNER_GREETINGS: ['Hi，I am product designer', 'Hi，I am XR creator', 'Hi，I am artist', 'Welcome to mi blog😎'], // Banner habilities
 
-  HOME_NAV_BUTTONS: true, // 首页是否显示分类大图标按钮
+  HOME_NAV_BUTTONS: true, // If or not the home page displays the category large icon button
 
-  // 菜单配置
-  MENU_CATEGORY: true, // 显示分类
-  MENU_TAG: true, // 显示标签
-  MENU_ARCHIVE: true, // 显示归档
-  MENU_SEARCH: true, // 显示搜索
+  // Menu configuration
+  MENU_CATEGORY: true, // Show categories
+  MENU_TAG: true, // Show tags
+  MENU_ARCHIVE: false, // Show archives
+  MENU_SEARCH: false, // Show search
 
-  POST_LIST_COVER: true, // 文章封面
-  POST_LIST_SUMMARY: true, // 文章摘要
-  POST_LIST_PREVIEW: true, // 读取文章预览
+  POST_LIST_COVER: true, // Show article cover
+  POST_LIST_SUMMARY: true, // article summary
+  POST_LIST_PREVIEW: true, // Read article preview
 
-  ARTICLE_ADJACENT: true, // 显示上一篇下一篇文章推荐
-  ARTICLE_COPYRIGHT: true, // 显示文章版权声明
-  ARTICLE_RECOMMEND: true, // 文章关联推荐
+  ARTICLE_ADJACENT: true, // Show previous and next article recommendations
+  ARTICLE_COPYRIGHT: true, // Show article copyright notice
+  ARTICLE_RECOMMEND: true, // Show article-related recommendations
 
-  WIDGET_LATEST_POSTS: true, // 显示最新文章卡
-  WIDGET_ANALYTICS: false, // 显示统计卡
+  WIDGET_LATEST_POSTS: true, // Show the latest article card
+  WIDGET_ANALYTICS: false, // Show statistics card
   WIDGET_TO_TOP: true,
-  WIDGET_TO_COMMENT: true, // 跳到评论区
-  WIDGET_DARK_MODE: true, // 夜间模式
-  WIDGET_TOC: true // 移动端悬浮目录
+  WIDGET_TO_COMMENT: false, // Jump to the comment section
+  WIDGET_DARK_MODE: true, // Night mode
+  WIDGET_TOC: true // Mobile hover directory
+
 }
 export default CONFIG_HEXO
