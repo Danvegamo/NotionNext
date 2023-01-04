@@ -13,7 +13,7 @@ const BLOG = {
   AUTHOR: 'Danvegamo', // Author
   BIO: 'Lead & Product designer', // About of the author
   LINK: 'https://lmny.art', // website address
-  KEYWORDS: 'Notion, Blog', // website keywords separated by commas
+  KEYWORDS: 'Notion, Blog, metaverse, VR, social impact, David Vega, David Andres Vega Monsalve', // website keywords separated by commas
    // Social link, do not need to leave blank, for example CONTACT_WEIBO:''
   CONTACT_EMAIL: 'd_vega@lmny.art', // Email
   CONTACT_WEIBO: '', // personal website in Weibo
