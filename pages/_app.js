@@ -38,21 +38,21 @@ const Messenger = dynamic(() => import('@/components/FacebookMessenger'), {
 })
 
 const MyApp = ({ Component, pageProps }) => {
-   // External plug-ins
+    // External plug-ins
   const externalPlugins = <>
-        {JSON.parse(BLOG.THEME_SWITCH) && <ThemeSwitch />}
-        {JSON.parse(BLOG.DEBUG) && <DebugPanel />}
-        {BLOG.ANALYTICS_ACKEE_TRACKER && <Ackee />}
-        {BLOG.ANALYTICS_GOOGLE_ID && <Gtag />}
-        {JSON.parse(BLOG.ANALYTICS_BUSUANZI_ENABLE) && <Busuanzi />}
-        {BLOG.ADSENSE_GOOGLE_ID && <GoogleAdsense />}
-        {BLOG.FACEBOOK_APP_ID && BLOG.FACEBOOK_PAGE_ID && <Messenger />}
-        {JSON.parse(BLOG.FIREWORKS) && <Fireworks />}
-        {JSON.parse(BLOG.MUSIC_PLAYER) && <MusicPlayer />}
+      {JSON.parse(BLOG.THEME_SWITCH) && <ThemeSwitch />}
+      {JSON.parse(BLOG.DEBUG) && <DebugPanel />}
+      {BLOG.ANALYTICS_ACKEE_TRACKER && <Ackee />}
+      {BLOG.ANALYTICS_GOOGLE_ID && <Gtag />}
+      {JSON.parse(BLOG.ANALYTICS_BUSUANZI_ENABLE) && <Busuanzi />}
+      {BLOG.ADSENSE_GOOGLE_ID && <GoogleAdsense />}
+      {BLOG.FACEBOOK_APP_ID && BLOG.FACEBOOK_PAGE_ID && <Messenger />}
+      {JSON.parse(BLOG.FIREWORKS) && <Fireworks />}
+      {JSON.parse(BLOG.MUSIC_PLAYER) && <MusicPlayer />}
     </>
 
- // default webfont: please check font-family in font.js file new version change from npm local import.
-   const DEFAULT_FONTS_URL = [
+  // default webfont: please check font-family in font.js file new version change from npm local import.
+  const DEFAULT_FONTS_URL = [
     // 'https://fonts.font.im/css2?family=Noto+Sans+SC&display=optional',
     // 'https://fonts.font.im/css2?family=Noto+Serif+SC&display=optional'
   ]
