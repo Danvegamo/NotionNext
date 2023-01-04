@@ -38,7 +38,7 @@ const Messenger = dynamic(() => import('@/components/FacebookMessenger'), {
 })
 
 const MyApp = ({ Component, pageProps }) => {
-    // External plug-ins
+// External plug-ins
   const externalPlugins = <>
       {JSON.parse(BLOG.THEME_SWITCH) && <ThemeSwitch />}
       {JSON.parse(BLOG.DEBUG) && <DebugPanel />}
