@@ -38,7 +38,7 @@ const Messenger = dynamic(() => import('@/components/FacebookMessenger'), {
 })
 
 const MyApp = ({ Component, pageProps }) => {
-  // 外部插件
+   // External plug-ins
   const externalPlugins = <>
         {JSON.parse(BLOG.THEME_SWITCH) && <ThemeSwitch />}
         {JSON.parse(BLOG.DEBUG) && <DebugPanel />}
@@ -51,18 +51,18 @@ const MyApp = ({ Component, pageProps }) => {
         {JSON.parse(BLOG.MUSIC_PLAYER) && <MusicPlayer />}
     </>
 
-  // 默认Webfont:  请在font.js文件中检查font-family 新版改从npm本地导入；
-  const DEFAULT_FONTS_URL = [
+ // default webfont: please check font-family in font.js file new version change from npm local import.
+   const DEFAULT_FONTS_URL = [
     // 'https://fonts.font.im/css2?family=Noto+Sans+SC&display=optional',
     // 'https://fonts.font.im/css2?family=Noto+Serif+SC&display=optional'
   ]
 
-  // 用户指定CUSTOM_FONT 则取CUSTOM_FONT_URL
+  // If the user specifies CUSTOM_FONT, then CUSTOM_FONT_URL is taken.
   const FONTS_URL = BLOG.CUSTOM_FONT ? BLOG.CUSTOM_FONT_URL : DEFAULT_FONTS_URL
 
   return (
         <GlobalContextProvider>
-            {/* 渲染所有字体 */}
+            {/* Render all fonts */}
             {FONTS_URL?.map(fontUrl => <link href={`${fontUrl}`} key={fontUrl} rel="stylesheet" />)}
             {externalPlugins}
             <Component {...pageProps} />

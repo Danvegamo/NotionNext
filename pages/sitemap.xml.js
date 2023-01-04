@@ -48,7 +48,7 @@ export const getServerSideProps = async (ctx) => {
   })
   const fields = defaultFields.concat(postFields)
 
-  // 缓存
+  // Cache
   //   ctx.res.setHeader(
   //     'Cache-Control',
   //     'public, s-maxage=10, stale-while-revalidate=59'

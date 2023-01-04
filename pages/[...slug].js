@@ -22,7 +22,7 @@ const Slug = props => {
   const { post, siteInfo } = props
   const router = Router.useRouter()
 
-  // 文章锁🔐
+  // Article lock 🔐
   const [lock, setLock] = React.useState(post?.password && post?.password !== '')
 
   React.useEffect(() => {
@@ -45,17 +45,17 @@ const Slug = props => {
         const article = document.getElementById('container')
         if (!article) {
           router.push('/404').then(() => {
-            console.warn('找不到页面', router.asPath)
+            console.warn('Page not found', router.asPath)
           })
         }
       }
-    }, 20 * 1000)
+    }, 5 * 1000)
     const meta = { title: `${props?.siteInfo?.title || BLOG.TITLE} | loading`, image: siteInfo?.pageCover || BLOG.HOME_BANNER_IMAGE }
     return <ThemeComponents.LayoutSlug {...props} showArticleInfo={true} meta={meta} />
   }
 
   /**
-   * 验证文章密码
+   * Verify article password
    * @param {*} result
    */
   const validPassword = passInput => {

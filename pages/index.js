@@ -23,12 +23,12 @@ export async function getStaticProps() {
   }
   // 处理分页
   if (BLOG.POST_LIST_STYLE === 'scroll') {
-    // 滚动列表默认给前端返回所有数据
+    // Scrolling lists return all data to the front-end by default
   } else if (BLOG.POST_LIST_STYLE === 'page') {
     props.posts = props.posts?.slice(0, BLOG.POSTS_PER_PAGE)
   }
 
-  // 预览文章内容
+  // Preview article content
   if (BLOG.POST_LIST_PREVIEW === 'true') {
     for (const i in props.posts) {
       const post = props.posts[i]

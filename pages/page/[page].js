@@ -39,11 +39,11 @@ export async function getStaticProps({ params: { page } }) {
   const props = await getGlobalNotionData({ from })
   const { allPages } = props
   const allPosts = allPages.filter(page => page.type === 'Post' && page.status === 'Published')
-  // 处理分页
+  // Handling paging
   props.posts = allPosts.slice(BLOG.POSTS_PER_PAGE * (page - 1), BLOG.POSTS_PER_PAGE * page)
   props.page = page
 
-  // 处理预览
+  // Processing Preview
   if (BLOG.POST_LIST_PREVIEW === 'true') {
     for (const i in props.posts) {
       const post = props.posts[i]
