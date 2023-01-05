@@ -21,7 +21,7 @@ export default function Category(props) {
     title: `${props.category} | ${locale.COMMON.CATEGORY} | ${
       siteInfo?.title || ''
     }`,
-    description: siteInfo?.description, 'Is a category page': true,
+    description: siteInfo?.description,
     slug: 'category/' + props.category,
     image: siteInfo?.pageCover,
     type: 'website'
