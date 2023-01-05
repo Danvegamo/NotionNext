@@ -23,7 +23,7 @@ export const LayoutCategoryIndex = props => {
                 legacyBehavior>
                 <div
                   className={
-                    ' duration-300 dark:hover:text-white px-5 cursor-pointer py-2 hover:text-indigo-400'
+                    ' duration-300 dark:hover:text-white px-5 cursor-pointer py-2 hover:text-yellow-400'
                   }
                 >
                   <i className="mr-4 fas fa-folder" />

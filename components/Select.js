@@ -33,8 +33,8 @@ Select.defaultProps = {
   label: '',
   value: '1',
   options: [
-    { value: '1', text: '选项1' },
-    { value: '2', text: '选项2' }
+    { value: '1', text: 'Option 1' },
+    { value: '2', text: 'Option 2' }
   ]
 }
 export default Select
