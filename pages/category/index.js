@@ -6,7 +6,7 @@ import { getAllCategories } from '@/lib/notion/getAllCategories'
 import BLOG from '@/blog.config'
 
 /**
- * 分类首页
+ * Category Home
  * @param {*} props
  * @returns
  */
