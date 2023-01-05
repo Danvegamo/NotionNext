@@ -4,13 +4,13 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 /**
- * 最新文章列表
- * @param posts 所有文章数据
- * @param sliceCount 截取展示的数量 默认6
+ * Latest posts list
+ * @param posts All posts data
+ * @param sliceCount Number of intercept displays Default 6
  * @constructor
  */
 const LatestPostsGroup = ({ latestPosts, siteInfo }) => {
-  // 获取当前路径
+  // Get current path
   const currentPath = useRouter().asPath
   const { locale } = useGlobal()
 

@@ -3,10 +3,10 @@ import React from 'react'
 import CONFIG_HEXO from '../config_hexo'
 
 /**
- * 跳转到网页顶部
- * 当屏幕下滑500像素后会出现该控件
- * @param targetRef 关联高度的目标html标签
- * @param showPercent 是否显示百分比
+ * Jump to the top of the page
+ * This control appears when the screen is slipped 500 pixels
+ * @param targetRef The target html tag for the associated height
+ * @param showPercent Whether to show the percentage
  * @returns {JSX.Element}
  * @constructor
  */
