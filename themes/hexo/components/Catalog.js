@@ -58,9 +58,9 @@ const Catalog = ({ toc }) => {
   if (!toc || toc.length < 1) {
     return <></>
   }
-
+// contents title
   return <div className='px-3'>
-    <div className='w-full'><i className='mr-1 fas fa-stream' /> 目录</div>
+    <div className='w-full'><i className='mr-1 fas fa-stream' /> Contents</div>
     <div className='w-full py-3'>
       <Progress />
     </div>
