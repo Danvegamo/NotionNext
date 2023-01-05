@@ -58,12 +58,12 @@ const Header = props => {
     ) {
       autoScroll = true
       window.scrollTo({ top: wrapperTop, behavior: 'smooth' })
-      setTimeout(autoScrollEnd, 200)
+      setTimeout(autoScrollEnd, 500)
     }
     if ((scrollS < windowTop) && (scrollS < window.innerHeight) && !autoScroll) {
       autoScroll = true
       window.scrollTo({ top: 0, behavior: 'smooth' })
-      setTimeout(autoScrollEnd, 200)
+      setTimeout(autoScrollEnd, 500)
     }
     windowTop = scrollS
   }
