@@ -17,7 +17,7 @@ import 'aos/dist/aos.css' // You can also use <link> for styles
 import { isBrowser } from '@/lib/utils'
 
 /**
- * 基础布局 采用左右两侧布局，移动端使用顶部导航栏
+ * Basic layout Use the left and right side layout, mobile use the top navigation bar
  * @param props
  * @returns {JSX.Element}
  * @constructor
@@ -25,7 +25,7 @@ import { isBrowser } from '@/lib/utils'
 const LayoutBase = props => {
   const { children, headerSlot, floatSlot, meta, siteInfo } = props
   const [show, switchShow] = useState(false)
-  // const [percent, changePercent] = useState(0) // 页面阅读百分比
+  // const [percent, changePercent] = useState(0) // Page Reading Percentage
   const rightAreaSlot = (
     <>
       <FacebookPage />
@@ -78,7 +78,7 @@ const LayoutBase = props => {
         </div>
       </main>
 
-      {/* 右下角悬浮 */}
+      {/* Lower right corner hover */}
       <div className="bottom-12 right-1 fixed justify-end z-20  text-white bg-yellow-500 dark:bg-hexo-black-gray rounded-sm">
         <div
           className={
