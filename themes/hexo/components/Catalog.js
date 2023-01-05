@@ -4,13 +4,13 @@ import { uuidToId } from 'notion-utils'
 import Progress from './Progress'
 
 /**
- * 目录导航组件
+ * Directory navigation component
  * @param toc
  * @returns {JSX.Element}
  * @constructor
  */
 const Catalog = ({ toc }) => {
-  // 监听滚动事件
+  // Listening to scrolling events
   React.useEffect(() => {
     window.addEventListener('scroll', actionSectionScrollSpy)
     actionSectionScrollSpy()
@@ -19,11 +19,11 @@ const Catalog = ({ toc }) => {
     }
   }, [])
 
-  // 目录自动滚动
+  // Automatic scrolling of the table of contents
   const tRef = useRef(null)
   const tocIds = []
 
-  // 同步选中目录事件
+  // Synchronize selected directory events
   const [activeSection, setActiveSection] = React.useState(null)
 
   const throttleMs = 100
@@ -54,7 +54,7 @@ const Catalog = ({ toc }) => {
     tRef?.current?.scrollTo({ top: 28 * index, behavior: 'smooth' })
   }, throttleMs))
 
-  // 无目录就直接返回空
+  // Return empty if there is no directory
   if (!toc || toc.length < 1) {
     return <></>
   }
@@ -77,7 +77,7 @@ const Catalog = ({ toc }) => {
             notion-table-of-contents-item-indent-level-${tocItem.indentLevel} `}
             >
               <span style={{ display: 'inline-block', marginLeft: tocItem.indentLevel * 16 }}
-                className={`${activeSection === id && ' font-bold text-indigo-400 underline'}`}
+                className={`${activeSection === id && ' font-bold text-yellow-500 underline'}`}
               >
                 {tocItem.text}
               </span>

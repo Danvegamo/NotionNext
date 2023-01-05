@@ -2,14 +2,14 @@ import Catalog from './Catalog'
 import React, { useImperativeHandle, useState } from 'react'
 
 /**
- * 目录抽屉栏
+ * Catalog Drawer Bar
  * @param toc
  * @param post
  * @returns {JSX.Element}
  * @constructor
  */
 const TocDrawer = ({ post, cRef }) => {
-  // 暴露给父组件 通过cRef.current.handleMenuClick 调用
+  // Exposed to the parent component Called via cRef.current.handleMenuClick
   useImperativeHandle(cRef, () => {
     return {
       handleSwitchVisible: () => switchVisible()
@@ -21,7 +21,7 @@ const TocDrawer = ({ post, cRef }) => {
   }
   return <>
     <div className='fixed top-0 right-0 z-40 '>
-      {/* 侧边菜单 */}
+      {/* Side Menu */}
       <div
         className={(showDrawer ? 'animate__slideInRight ' : ' -mr-72 animate__slideOutRight') +
         ' shadow-card animate__animated animate__faster' +
@@ -34,7 +34,7 @@ const TocDrawer = ({ post, cRef }) => {
           }
       </div>
     </div>
-    {/* 背景蒙版 */}
+    {/* Background Mask */}
     <div id='right-drawer-background' className={(showDrawer ? 'block' : 'hidden') + ' fixed top-0 left-0 z-30 w-full h-full'}
          onClick={switchVisible} />
   </>

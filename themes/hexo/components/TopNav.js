@@ -126,14 +126,14 @@ const TopNav = props => {
   return (<div id='top-nav' className='z-40'>
     <SearchDrawer cRef={searchDrawer} slot={searchDrawerSlot}/>
 
-    {/* 导航栏 */}
+    {/* Navigation bar */}
     <div id='sticky-nav' className={'top-0 drop-shadow-md fixed bg-none animate__animated animate__fadeIn dark:bg-hexo-black-gray dark:text-gray-200 text-black w-full z-20 transform duration-200 border-transparent dark:border-transparent'}>
       <div className='w-full flex justify-between items-center px-4 py-2'>
         <div className='flex'>
          <Logo {...props}/>
         </div>
 
-        {/* 右侧功能 */}
+        {/* Right side function */}
         <div className='mr-1 justify-end items-center '>
           <div className='hidden lg:flex'> <MenuButtonGroupTop {...props}/></div>
           <div onClick={toggleMenuOpen} className='w-8 justify-center items-center h-8 cursor-pointer flex lg:hidden'>

@@ -3,9 +3,9 @@ import React from 'react'
 import CONFIG_HEXO from '../config_hexo'
 
 /**
- * 点击召唤目录抽屉
- * 当屏幕下滑500像素后会出现该控件
- * @param props 父组件传入props
+ * Click to summon the catalog drawer
+ * The control will appear when the screen slides 500 pixels
+ * @param props parent component pass in props
  * @returns {JSX.Element}
  * @constructor
  */
