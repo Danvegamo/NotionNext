@@ -34,7 +34,7 @@ const Progress = ({ targetRef, showPercent = true }) => {
         style={{ width: `${percent}%` }}
       >
         {showPercent && (
-          <div className="text-right text-white text-xs">{percent}%</div>
+          <div className="text-right text-black text-xs">{percent}%</div>
         )}
       </div>
     </div>
