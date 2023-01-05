@@ -48,7 +48,7 @@ const Header = props => {
    * 自动吸附滚动，移动端体验不好暂时关闭
    */
   const scrollTrigger = () => {
-    if (screen.width <= 300) {
+    if (screen.width <= 768) {
       return
     }
 
@@ -58,12 +58,12 @@ const Header = props => {
     ) {
       autoScroll = true
       window.scrollTo({ top: wrapperTop, behavior: 'smooth' })
-      setTimeout(autoScrollEnd, 500)
+      setTimeout(autoScrollEnd, 200)
     }
     if ((scrollS < windowTop) && (scrollS < window.innerHeight) && !autoScroll) {
       autoScroll = true
       window.scrollTo({ top: 0, behavior: 'smooth' })
-      setTimeout(autoScrollEnd, 500)
+      setTimeout(autoScrollEnd, 200)
     }
     windowTop = scrollS
   }
