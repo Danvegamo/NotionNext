@@ -5,7 +5,7 @@ import * as ThemeMap from '@/themes'
 import BLOG from '@/blog.config'
 
 /**
- * 分类页
+ * Category Page
  * @param {*} props
  * @returns
  */
@@ -21,7 +21,7 @@ export default function Category(props) {
     title: `${props.category} | ${locale.COMMON.CATEGORY} | ${
       siteInfo?.title || ''
     }`,
-    description: siteInfo?.description,
+    description: siteInfo?.description, 'Is a category page',
     slug: 'category/' + props.category,
     image: siteInfo?.pageCover,
     type: 'website'
