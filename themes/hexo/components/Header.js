@@ -48,7 +48,7 @@ const Header = props => {
    * 自动吸附滚动，移动端体验不好暂时关闭
    */
   const scrollTrigger = () => {
-    if (screen.width <= 768) {
+    if (screen.width <= 300) {
       return
     }
 
