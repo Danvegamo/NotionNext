@@ -45,7 +45,7 @@ const Header = props => {
   }
 
   /**
-   * 自动吸附滚动，移动端体验不好暂时关闭
+   * Automatic adsorption scrolling, mobile experience is not good temporarily closed
    */
   const scrollTrigger = () => {
     if (screen.width <= 768) {
@@ -53,7 +53,7 @@ const Header = props => {
     }
 
     const scrollS = window.scrollY
-    // 自动滚动
+    // Auto Scroll
     if ((scrollS > windowTop) & (scrollS < window.innerHeight) && !autoScroll
     ) {
       autoScroll = true
@@ -78,7 +78,7 @@ const Header = props => {
   return (
     <header
       id="header"
-      className="duration-500 md:bg-fixed w-full bg-cover bg-center h-screen bg-black text-white"
+      className="duration-500 md:bg-fixed w-full bg-cover bg-center h-screen bg-yellow-500 text-white"
       style={{
         backgroundImage:
           `linear-gradient(rgba(0, 0, 0, 0.9), rgba(0,0,0,0.5), rgba(0,0,0,0.3), rgba(0,0,0,0.5), rgba(0, 0, 0, 0.9) ),url("${siteInfo?.pageCover}")`
@@ -90,7 +90,7 @@ const Header = props => {
           <span id='typed'/>
         </div>
 
-        {/* 首页导航插件 */}
+        {/* Home Page Navigation Plugin */}
         { CONFIG_HEXO.HOME_NAV_BUTTONS && <NavButtonGroup {...props}/>}
 
       </div>
@@ -98,7 +98,7 @@ const Header = props => {
         onClick={() => {
           window.scrollTo({ top: wrapperTop, behavior: 'smooth' })
         }}
-        className="cursor-pointer w-full text-center py-4 text-3xl absolute bottom-10 text-white"
+        className="cursor-pointer w-full text-center py-4 text-3xl absolute bottom-10 text-yellow-500"
       >
         <i className='animate-bounce fas fa-angle-down'/>
       </div>
