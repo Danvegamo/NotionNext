@@ -86,7 +86,7 @@ const Header = props => {
     >
       <div className="absolute flex flex-col h-full items-center justify-center w-full ">
         <div className='text-4xl md:text-5xl text-white shadow-text'>{siteInfo?.title}</div>
-        <div className='mt-2 h-12 items-center text-center shadow-text text-white text-lg'>
+        <div className='mt-2 h-12 items-center text-center shadow-text text-black text-lg'>
           <span id='typed'/>
         </div>
 
