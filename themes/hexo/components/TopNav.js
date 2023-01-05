@@ -37,13 +37,13 @@ const TopNav = props => {
       nav && nav.classList.replace('bg-white', 'bg-none')
       nav && nav.classList.replace('text-black', 'text-white')
       nav && nav.classList.replace('border', 'border-transparent')
-      nav && nav.classList.replace('shadow-md', 'shadow-none')
+      nav && nav.classList.replace('drop-shadow-md', 'shadow-none')
       nav && nav.classList.replace('dark:bg-hexo-black-gray', 'transparent')
     } else {
       nav && nav.classList.replace('bg-none', 'bg-white')
       nav && nav.classList.replace('text-white', 'text-black')
       nav && nav.classList.replace('border-transparent', 'border')
-      nav && nav.classList.replace('shadow-none', 'shadow-md')
+      nav && nav.classList.replace('shadow-none', 'drop-shadow-md')
       nav && nav.classList.replace('transparent', 'dark:bg-hexo-black-gray')
     }
 
