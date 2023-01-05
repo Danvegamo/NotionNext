@@ -29,9 +29,9 @@ const TopNav = props => {
     const scrollS = window.scrollY
     const nav = document.querySelector('#sticky-nav')
     const header = document.querySelector('#header')
-    const showNav = scrollS <= windowTop || scrollS < 5 || (header && scrollS <= header.clientHeight)// 非首页无大图时影藏顶部 滚动条置顶时隐藏
-    // 是否将导航栏透明
-    const navTransparent = (scrollS < document.documentElement.clientHeight - 12 && router.route === '/') || scrollS < 300 // 透明导航条的条件
+    const showNav = scrollS <= windowTop || scrollS < 5 || (header && scrollS <= header.clientHeight)// Hide the top when there is no big picture on the non-home page Hide the scroll bar when it is on top
+    // Whether to make the navigation bar transparent
+    const navTransparent = (scrollS < document.documentElement.clientHeight - 12 && router.route === '/') || scrollS < 300 // Conditions for transparent navigation bars
 
     if (header && navTransparent) {
       nav && nav.classList.replace('bg-white', 'bg-none')
@@ -69,7 +69,7 @@ const TopNav = props => {
     }
   }
 
-  // 监听滚动
+  // Listening to scrolling
   useEffect(() => {
     scrollTrigger()
 

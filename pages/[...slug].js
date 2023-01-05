@@ -154,13 +154,14 @@ export async function getStaticProps({ params: { slug } }) {
 }
 
 /**
- * 获取文章的关联推荐文章列表，目前根据标签关联性筛选
+* Get a list of related recommended articles for an article, currently filtered by tag relevance
+
  * @param post
  * @param {*} allPosts
  * @param {*} count
  * @returns
  */
-function getRecommendPost(post, allPosts, count = 6) {
+function getRecommendPost(post, allPosts, count = 3) {
   let recommendPosts = []
   const postIds = []
   const currentTags = post?.tags || []
