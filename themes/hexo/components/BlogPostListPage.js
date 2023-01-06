@@ -4,10 +4,10 @@ import BLOG from '@/blog.config'
 import BlogPostListEmpty from './BlogPostListEmpty'
 
 /**
- * 文章列表分页表格
- * @param page 当前页
- * @param posts 所有文章
- * @param tags 所有标签
+ * Article List Paging Form
+ * @param page Current page
+ * @param posts All posts
+ * @param tags All tags
  * @returns {JSX.Element}
  * @constructor
  */
