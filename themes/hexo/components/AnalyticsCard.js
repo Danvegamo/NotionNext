@@ -4,7 +4,7 @@ export function AnalyticsCard (props) {
   const { postCount } = props
   return <Card>
     <div className='ml-2 mb-3 '>
-      <i className='fas fa-chart-area' /> 统计
+      <i className='fas fa-chart-area' /> Statistics
     </div>
     <div className='text-xs  font-light justify-center mx-7'>
       <div className='inline'>

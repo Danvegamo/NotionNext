@@ -1,7 +1,7 @@
 import React from 'react'
 
 /**
- * 折叠面板组件，支持水平折叠、垂直折叠
+ * Folding panel assembly, support horizontal folding, vertical folding
  * @param {type:['horizontal','vertical'],isOpen} props
  * @returns
  */

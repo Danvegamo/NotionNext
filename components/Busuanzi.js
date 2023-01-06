@@ -16,7 +16,7 @@ export default function Busuanzi () {
     }
   })
 
-  // 更换主题时更新
+  // Update when changing theme
   React.useEffect(() => {
     if (theme) {
       busuanzi.fetch()

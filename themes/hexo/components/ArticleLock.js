@@ -1,10 +1,10 @@
 import { useGlobal } from '@/lib/global'
 
 /**
- * 加密文章校验组件
+ * Encrypted article verification component
  * @param {password, validPassword} props
- * @param password 正确的密码
- * @param validPassword(bool) 回调函数，校验正确回调入参为true
+ * @param password The correct password
+ * @param validPassword(bool) Callback function, check the correct callback input is true
  * @returns
  */
 export const ArticleLock = props => {

@@ -5,7 +5,7 @@ import * as ThemeMap from '@/themes'
 import BLOG from '@/blog.config'
 
 /**
- * 分类页
+ * Category Page
  * @param {*} props
  * @returns
  */
@@ -33,11 +33,11 @@ export async function getStaticProps({ params: { category, page } }) {
   const from = 'category-page-props'
   let props = await getGlobalNotionData({ from })
 
-  // 过滤状态类型
+  // Filter Status Type
   props.posts = props.allPages.filter(page => page.type === 'Post' && page.status === 'Published').filter(post => post && post.category && post.category.includes(category))
-  // 处理文章页数
+  // Processing article pages
   props.postCount = props.posts.length
-  // 处理分页
+  // Handling paging
   props.posts = props.posts.slice(BLOG.POSTS_PER_PAGE * (page - 1), BLOG.POSTS_PER_PAGE * page - 1)
 
   delete props.allPages
@@ -57,9 +57,9 @@ export async function getStaticPaths() {
   const paths = []
 
   categories?.forEach(category => {
-    // 过滤状态类型
+    // Filter Status Type
     const categoryPosts = allPages.filter(page => page.type === 'Post' && page.status === 'Published').filter(post => post && post.category && post.category.includes(category.name))
-    // 处理文章页数
+    // Processing article pages
     const postCount = categoryPosts.length
     const totalPages = Math.ceil(postCount / BLOG.POSTS_PER_PAGE)
     if (totalPages > 1) {

@@ -6,9 +6,9 @@ import 'prismjs/plugins/show-language/prism-show-language'
 import 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard'
 import 'prismjs/plugins/line-numbers/prism-line-numbers'
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
-// 所有语言的prismjs 使用autoloader引入
+// Prismjs for all languages introduced using autoloader
 import 'prismjs/plugins/autoloader/prism-autoloader'
-// mermaid图
+// mermaid chart
 import BLOG from '@/blog.config'
 
 /**
@@ -20,7 +20,7 @@ const PrismMac = () => {
     renderPrismMac()
     renderMermaid()
 
-    // 折叠代码行号bug
+    // Collapse code line number bug
     const observer = new MutationObserver(mutationsList => {
       for (const m of mutationsList) {
         if (m.target.nodeName === 'DETAILS') {
@@ -37,10 +37,10 @@ const PrismMac = () => {
 }
 
 /**
- * 将mermaid语言 渲染成图片
+ * Render mermaid language to image
  */
 const renderMermaid = async() => {
-  //   支持 Mermaid
+  //   Support Mermaid
   const mermaidPres = document.querySelectorAll('pre.notion-code.language-mermaid')
   if (mermaidPres) {
     for (const e of mermaidPres) {
@@ -83,14 +83,14 @@ function renderPrismMac() {
     })
   }
 
-  // 重新渲染之前检查所有的多余text
+  // Check all redundant text before re-rendering
 
   try {
     // setup autoloader
     Prism.plugins.autoloader.languages_path = BLOG.PRISM_JS_PATH
     Prism.highlightAll()
   } catch (err) {
-    console.log('代码渲染', err)
+    console.log('Code rendering', err)
   }
 
   const codeToolBars = container?.getElementsByClassName('code-toolbar')

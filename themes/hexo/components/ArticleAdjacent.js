@@ -2,7 +2,7 @@ import Link from 'next/link'
 import CONFIG_HEXO from '../config_hexo'
 
 /**
- * 上一篇，下一篇文章
+ * Previous, Next Article
  * @param {prev,next} param0
  * @returns
  */

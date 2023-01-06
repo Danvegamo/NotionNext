@@ -54,7 +54,7 @@ const Comment = ({ frontMatter }) => {
   const router = useRouter()
 
   React.useEffect(() => {
-    // 跳转到评论区
+    // Skip to comment section
     setTimeout(() => {
       if (window.location.href.indexOf('target=comment') > -1) {
         const url = router.asPath.replace('?target=comment', '')
