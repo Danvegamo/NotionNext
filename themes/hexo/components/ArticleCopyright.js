@@ -33,7 +33,7 @@ export default function ArticleCopyright () {
         </li>
         <li>
           <strong className='mr-2'>{locale.COMMON.COPYRIGHT}:</strong>
-          {locale.COMMON.COPYRIGHT_NOTICE}
+          {All_rights_reserved}
         </li>
       </ul>
     </section>
