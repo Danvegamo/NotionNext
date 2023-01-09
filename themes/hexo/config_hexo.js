@@ -5,8 +5,8 @@ const CONFIG_HEXO = {
   HOME_NAV_BUTTONS: true, // If or not the home page displays the category large icon button
 
   // Menu configuration
-  MENU_CATEGORY: true, // Show categories
-  MENU_TAG: true, // Show tags
+  MENU_CATEGORY: false, // Show categories
+  MENU_TAG: false, // Show tags
   MENU_ARCHIVE: false, // Show archives
   MENU_SEARCH: false, // Show search
 
@@ -20,7 +20,7 @@ const CONFIG_HEXO = {
 
   WIDGET_LATEST_POSTS: true, // Show the latest article card
   WIDGET_ANALYTICS: false, // Show statistics card
-  WIDGET_TO_TOP: true,
+  WIDGET_TO_TOP: true, // arrow to top
   WIDGET_TO_COMMENT: false, // Jump to the comment section
   WIDGET_DARK_MODE: true, // Night mode
   WIDGET_TOC: true // Mobile hover directory

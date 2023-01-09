@@ -11,7 +11,7 @@ import dynamic from 'next/dynamic'
 
 const HexoRecentComments = dynamic(() => import('./HexoRecentComments'))
 /**
- * Hexo主题右侧栏
+ * Hexo theme right sidebar
  * @param {*} props
  * @returns
  */
