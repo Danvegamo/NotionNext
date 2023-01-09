@@ -16,7 +16,7 @@ const BLOG = {
   KEYWORDS: 'Notion, Blog, metaverse, VR, social impact, David Vega, David Andres Vega Monsalve', // website keywords separated by commas
    // Social link, do not need to leave blank, for example CONTACT_WEIBO:''
   CONTACT_EMAIL: 'd_vega@lmny.art', // Email
-  CONTACT_YOUTUBE: 'https://www.youtube.com/channel/UCyMmbzWgp46YO0dSLM5yNTg', // personal website in Weibo
+  CONTACT_YOUTUBE: 'https://www.youtube.com/@danvegamo99', // personal website in Weibo
   CONTACT_TWITTER: '', // Your Twitter profile
   CONTACT_GITHUB: 'https://github.com/Danvegamo', // Your Github profile
   CONTACT_TELEGRAM: '', // Your telegram profile https://t.me/tangly_1024
