@@ -2,7 +2,7 @@ import BLOG from '@/blog.config'
 import React from 'react'
 
 /**
- * 社交联系方式按钮组
+ * social contact button set
  * @returns {JSX.Element}
  * @constructor
  */
@@ -28,7 +28,7 @@ const SocialButton = () => {
         <i className='transform hover:scale-125 duration-150 fas fa-envelope dark:hover:text-yellow-400 hover:text-yellow-600'/>
       </a>}
       <a target='_blank' rel='noreferrer' title={'RSS'} href={'https://www.youtube.com/channel/UCyMmbzWgp46YO0dSLM5yNTg'} >
-        <i className='transform hover:scale-125 duration-150 fas fa-youtube dark:hover:text-yellow-400 hover:text-yellow-600'/>
+        <i className='transform hover:scale-125 duration-150 fas fa-video dark:hover:text-yellow-400 hover:text-yellow-600'/>
       </a>
     </div>
   </div>

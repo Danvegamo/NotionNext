@@ -9,7 +9,7 @@ export default function FloatDarkModeButton () {
     return <></>
   }
 
-  // 用户手动设置主题
+  // User manually sets the theme
   const handleChangeDarkMode = () => {
     const newStatus = !isDarkMode
     saveDarkModeToCookies(newStatus)
