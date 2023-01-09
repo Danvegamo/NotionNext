@@ -8,9 +8,9 @@ import CONFIG_HEXO from '../config_hexo'
 import { getListByPage } from '@/lib/utils'
 
 /**
- * 博客列表滚动分页
- * @param posts 所有文章
- * @param tags 所有标签
+ * Blog list scrolling pagination
+ * @param posts all posts
+ * @param tags all tags
  * @returns {JSX.Element}
  * @constructor
  */
@@ -30,7 +30,7 @@ const BlogPostListScroll = ({ posts = [], currentSearch, showSummary = CONFIG_HE
     updatePage(page + 1)
   }
 
-  // 监听滚动自动分页加载
+  // Monitor scrolling automatic pagination loading
   const scrollTrigger = React.useCallback(throttle(() => {
     const scrollS = window.scrollY + window.outerHeight
     const clientHeight = targetRef ? (targetRef.current ? (targetRef.current.clientHeight) : 0) : 0
@@ -39,7 +39,7 @@ const BlogPostListScroll = ({ posts = [], currentSearch, showSummary = CONFIG_HE
     }
   }, 500))
 
-  // 监听滚动
+  // Listen for scrolling
   React.useEffect(() => {
     window.addEventListener('scroll', scrollTrigger)
     return () => {
