@@ -78,7 +78,7 @@ Thanks to Craig Hart for initiating the Nobelium project
 </tr>
 </table>
 
-## 引用技术
+## reference technology
 
 - **Frame**: [Next.js](https://nextjs.org)
 - **Style**: [Tailwind CSS](https://www.tailwindcss.cn/) And `@tailwindcss/jit` compiler
