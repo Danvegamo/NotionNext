@@ -24,7 +24,7 @@ const BlogPostCard = ({ post, showSummary }) => {
             href={`${BLOG.SUB_PATH}/${post.slug}`}
             passHref
             className={`replace cursor-pointer hover:underline text-2xl ${showPreview ? 'text-center' : ''
-              } leading-tight text-gray-700 dark:text-gray-100 hover:text-blue-900 dark:hover:text-yellow-400`}>
+              } leading-tight text-gray-700 dark:text-gray-100 hover:text-gray-900 dark:hover:text-yellow-400`}>
 
             {post.title}
 
@@ -32,7 +32,7 @@ const BlogPostCard = ({ post, showSummary }) => {
 
           <div
             className={`flex mt-2 items-center ${showPreview ? 'justify-center' : 'justify-start'
-              } flex-wrap dark:text-gray-500 text-gray-400 hover:text-blue-900 dark:hover:text-yellow-400`}
+              } flex-wrap dark:text-gray-500 text-gray-400 hover:text-gray-900 dark:hover:text-yellow-400`}
           >
             <Link
               href={`/archive#${post?.date?.start_date?.substr(0, 7)}`}
@@ -52,7 +52,7 @@ const BlogPostCard = ({ post, showSummary }) => {
             </p>
           )}
 
-          {/* 搜索结果 */}
+          {/* search results */}
           {post.results && (
             <p className="mt-4 text-gray-700 dark:text-gray-300 text-sm font-light leading-7">
               {post.results.map(r => (
@@ -71,7 +71,7 @@ const BlogPostCard = ({ post, showSummary }) => {
             <Link
               href={`/category/${post.category}`}
               passHref
-              className="cursor-pointer font-light text-sm hover:underline hover:text-blue-900 dark:hover:text-yellow-400 transform">
+              className="cursor-pointer font-light text-sm hover:underline hover:text-gray-900 dark:hover:text-yellow-400 transform">
 
               <i className="mr-1 far fa-folder" />
               {post.category}
