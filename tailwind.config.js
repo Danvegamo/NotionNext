@@ -17,6 +17,7 @@ module.exports = {
         hexo: {
           'background-gray': '#f5f5f5',
           'black-gray': '#101414',
+          'article': '#111414',
           'light-gray': '#e5e5e5'
         }
       },
